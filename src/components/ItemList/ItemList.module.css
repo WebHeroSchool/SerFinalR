@@ -1,0 +1,52 @@
+.list {
+  margin: 0 auto 20px auto;
+  padding: 0 28px;
+  height: 455px;
+  list-style: none;
+  overflow-y: auto;
+}
+
+.empty-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 auto 20px auto;
+  padding: 0 28px;
+  height: 455px;
+  background: url(../../img/error.png) center bottom 180px no-repeat;
+  background-size: 267px 164px;
+}
+
+.empty-list__text {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.empty-list__subtext {
+  margin-bottom: 112px;
+  color: #999;
+  font-size: 14px;
+}
+
+@media (max-width: 590px) {
+  .list {
+    height: 250px;
+  }
+
+  .empty-list {
+    justify-content: flex-end;
+    height: 250px;
+    background-position: center bottom 80px;
+  }
+
+  .empty-list__text {
+    font-size: 16px;
+  }
+
+  .empty-list__subtext {
+    margin-bottom: 20px;
+    color: #999;
+    font-size: 14px;
+  }
+}

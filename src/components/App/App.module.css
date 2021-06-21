@@ -1,0 +1,48 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 8px;
+  max-width: 700px;
+  font-family: "Roboto" ,  sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 66px;
+  background: url(../../img/whs.png) left top 10px no-repeat;
+  background-size: 124px 32px;
+}
+
+.header__link {
+  padding: 13px 32px;
+  height: 19px;
+  font-size: 16px;
+  font-weight: bold;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header__about-me {
+  color: #FFF;
+  background-color: #356EFF;
+  box-shadow: 0 0 3px rgba(0, 0, 0, .25);
+  border-radius: 37px;
+}
+
+.header__todos {
+  color: #FFF;
+  background-color: #356EFF;
+  box-shadow: 0 0 3px rgba(0, 0, 0, .25);
+  border-radius: 37px;
+}
+
+@media (max-width: 520px) {
+  .header {
+    background: none;
+  }
+}
