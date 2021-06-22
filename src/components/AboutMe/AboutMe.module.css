@@ -1,0 +1,307 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 646px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  min-height: 200px;
+}
+
+.preloader {
+  margin: auto;
+  height: 100px;
+  width: 100px;
+  background: url(../../img/preloader.gif) no-repeat;
+  background-size: contain;
+}
+
+.user__wrapp {
+  margin: auto;
+  padding: 0 8px;
+  width: 100%;
+}
+
+.user-error {
+  margin: 0 auto;
+  max-width: 522px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  min-height: 184px;
+  width: 100%;
+}
+
+.info__avatar {
+  height: 183px;
+  width: 183px;
+  border-radius: 9px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+}
+
+.description__login {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+  height: 45px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.description__bio {
+  margin-bottom: 30px;
+  font-size: 17px;
+}
+
+.description__mail {
+  margin-bottom: 10px;
+}
+
+.description__mail,
+.description__tg {
+  display: flex;
+  align-items: center;
+  color: #999;
+}
+
+.description__mail:hover,
+.description__tg:hover {
+  color: #356EFF;
+}
+
+.description__mail ion-icon,
+.description__tg ion-icon {
+  padding-right: 5px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 110px;
+}
+
+.contacts ion-icon {
+  font-size: 30px;
+  color: #999;
+}
+
+.contacts ion-icon:hover {
+  color: #356EFF;
+}
+
+.works {
+  display: flex;
+  align-items: center;
+  height: 432px;
+}
+
+.works__wrapp {
+  margin: 0 auto;
+  height: 384px;
+  width: 90%;
+}
+
+.works__title {
+  display: flex;
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 293px;
+  width: 100%;
+  background: url(../../img/error.png) center bottom 71px no-repeat;
+  background-size: 267px 164px;
+}
+
+.error__text {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.error__help {
+  color: #999;
+  font-size: 14px;
+}
+
+.repositories {
+  display: flex;
+  justify-content: center;
+  height: 350px;
+}
+
+.list {
+  overflow-y: auto;
+  width: 90%;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFF;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CCC;
+  border-radius: 6px;
+}
+
+.repository {
+  display: flex;
+  align-items: center;
+  margin: 0 8px 8px 0;
+  height: 54px;
+  border: 2px solid #CCC;
+  border-radius: 10px;
+}
+
+.info-about-repository-wrapped {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 12px;
+  height: 36px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.info-about-repository {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #999;
+}
+
+.info-about-repository-wrapped__link {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.info-about-repository-wrapped__link:hover {
+  color: #356EFF;
+}
+
+.info-about-repository__null-icon {
+  margin-right: 5px;
+  height: 16px;
+  width: 16px;
+  background-color: #696969;
+  border-radius: 50%;
+}
+
+.info-about-repository__html-icon {
+  margin-right: 5px;
+  height: 16px;
+  width: 16px;
+  background: #E34C26;
+  border-radius: 50%;
+}
+
+.info-about-repository__css-icon {
+  margin-right: 5px;
+  height: 16px;
+  width: 16px;
+  background: #563D7C;
+  border-radius: 50%;
+}
+
+.info-about-repository__javascript-icon {
+  margin-right: 5px;
+  height: 16px;
+  width: 16px;
+  background: #F1E05A;
+  border-radius: 50%;
+}
+
+.info-about-repository__language {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 73px;
+}
+
+.info-about-repository__star {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 45px;
+  background: url(../../img/star.png) left center no-repeat;
+}
+
+.info-about-repository__forks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 45px;
+  background: url(../../img/forks.png) left center no-repeat;
+}
+
+.info-about-repository__update {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+@media (max-width: 570px) {
+  .section {
+    min-height: 830px;
+  }
+
+  .user__wrapp {
+    padding: 8px;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .info__avatar,
+  .description,
+  .contacts {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .description__bio {
+    margin-bottom: 20px;
+  }
+
+  .description__tg {
+    margin: 0 auto 10px auto;
+    text-align: center;
+  }
+
+  .info-about-repository-wrapped {
+    height: 41px;
+  }
+
+  .works__title {
+    padding-left: 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .info-about-repository__update {
+    display: none;
+  }
+}
