@@ -1,0 +1,101 @@
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap__text {
+  width: 85%;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+  padding: 9.5px 13px;
+  width: 94%;
+  border: 1px solid #CCC;
+  border-radius: 29px;
+  outline: none;
+}
+
+.wrap__error-empty-text,
+.wrap__error-repeat-case {
+  position: relative;
+}
+
+.wrap__error-empty-text::before {
+  content: 'Для добавления дела необходимо ввести текст!';
+  position: absolute;
+  padding: 10px;
+  width: 170px;
+  font-size: 14px;
+  color: #FFF;
+  background-color: #356EFF;
+  border-radius: 6px;
+  transform: translateY(-130%);
+}
+
+.wrap__error-empty-text::after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  border: 10px solid transparent;
+  border-top-color: #356EFF;
+  transform: translateY(-260%);
+}
+
+.wrap__error-repeat-case::before {
+  content: 'Это дело уже есть в списке!';
+  position: absolute;
+  padding: 10px;
+  width: 170px;
+  font-size: 14px;
+  color: #FFF;
+  background-color: #356EFF;
+  border-radius: 6px;
+  transform: translateY(-130%);
+}
+
+.wrap__error-repeat-case::after {
+  content: '';
+  position: absolute;
+  left: 10px;
+  border: 10px solid transparent;
+  border-top-color: #356EFF;
+  transform: translateY(-260%);
+}
+
+.wrap__input:focus {
+  border: 1px solid #356EFF;
+}
+
+.wrap__button {
+  height: 36px;
+  width: 36px;
+  background: url(../../img/add-button.png) center center no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 600px) {
+  .input {
+    width: 90%;
+  }
+}
+
+@media (max-width: 400px) {
+  .input {
+    width: 85%;
+  }
+
+  .wrap__error-repeat-case::before {
+    transform: translateY(-125%);
+  }
+
+  .wrap__error-empty-text::before {
+    transform: translateY(-120%);
+  }
+}
